@@ -4,3 +4,8 @@ function toggleMenu() {
 	menu.classList.toggle("open");
 	icon.classList.toggle("open");
 }
+
+function sendEmail() 
+{
+    window.location = "mailto:joeydavid99@gmail.com";
+}
