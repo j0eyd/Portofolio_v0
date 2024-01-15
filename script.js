@@ -5,9 +5,9 @@ function toggleMenu() {
 	icon.classList.toggle("open");
 }
 
-function sendEmail() 
-{
-    window.location = "mailto:joeydavid99@gmail.com";}
+function sendEmail() {
+    window.location = "mailto:joeydavid99@gmail.com";
+}
 
 function copyToClipboard(textToCopy, Name) {
     navigator.clipboard.writeText(textToCopy)

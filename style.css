@@ -71,18 +71,20 @@ a:hover {
 
 #hamburger-nav {
 	display: none;
+	z-index: 2;
 }
 
 .hamburger-menu {
 	position: relative;
 	display: inline-block;
+	z-index: 2;
 }
 
 .hamburger-icon {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 23px;
+	height: 24px;
 	width: 30px;
 	cursor: pointer;
 }
@@ -169,6 +171,7 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+	z-index: 1;
 	display: flex;
 	justify-content: center;
 	gap: 5rem;
