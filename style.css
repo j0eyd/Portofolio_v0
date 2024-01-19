@@ -152,10 +152,11 @@ a:hover {
 
 section {
 	padding: 4vh;
-	height: 95vh;
+	height: fit-content;
 	margin: 0 10rem;
 	box-sizing: border-box;
 	min-height: fit-content;
+	margin-bottom: 10vh;
 }
 
 .section-container {
@@ -165,7 +166,7 @@ section {
 .arrow-profile {
 	position: absolute;
 	right: -5rem;
-	bottom: -8rem;
+	bottom: -6rem;
 }
 
 /* PROFILE SECTION */
@@ -176,8 +177,6 @@ section {
 	justify-content: center;
 	gap: 5rem;
 	height: 55vh;
-	margin-top: 5rem;
-	margin-bottom: 10rem;
 	position: relative;
 	align-items: center;
 }
@@ -188,9 +187,18 @@ section {
 	height: auto;
 }
 
+.profile-picture {
+	outline:3px solid rgb(53, 53, 53);
+	border-radius: 50%;
+}
+
 .section__text {
 	align-self: center;
 	text-align: center;
+}
+
+.section.profile {
+	height: fit-content;
 }
 
 .section__text p {
@@ -233,11 +241,15 @@ section {
 }
 
 .icon {
-	cursor : pointer;
+	cursor : default;
 	height: 2rem;
 	transition: transform 0.2s ease;
 }
 
+.icon__experience {
+	height: 2rem;
+
+}
 /* BUTTONS */
 
 .btn-container {
@@ -299,7 +311,7 @@ section {
 }
 
 .about-containers {
-	gap: 0.5rem;
+	gap: 1rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
@@ -316,12 +328,18 @@ section {
 
 .about-pic {
 	border-radius: 2rem;
+	height: 110%;
 }
 
 .arrow {
 	position: absolute;
 	right: -5rem;
-	bottom: 2.5rem;
+	bottom: -2rem;
+}
+
+p.about {
+	text-indent: 30px;
+	text-align: justify;
 }
 
 .details-container {
@@ -332,6 +350,7 @@ section {
 	border: rgb(53, 53, 53) 0.17rem solid;
 	border-color: rgb(100, 100, 100);
 	text-align: center;
+	gap: 2rem;
 }
 
 .text-container {
@@ -370,7 +389,7 @@ section {
 
 .article-container {
 	display: flex;
-	text-align: initial;
+	text-align: center;
 	flex-wrap: wrap;
 	flex-direction: row;
 	gap: 2.5rem;
@@ -379,8 +398,9 @@ section {
 
 .article {
 	display: flex;
+	flex: 1;
 	width: 10rem;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	gap: 0.5rem;
 	align-items: center;
 	text-align: center;
@@ -388,7 +408,6 @@ section {
 
 article .icon {
 	cursor: default;
-	
 }
 
 /* PROJECTS SECTION */
@@ -404,13 +423,14 @@ article .icon {
 
 .project-img {
 	border-radius: 2rem;
-	width: 90%;
-	height: 90%;
+	width: 22vw;
+	height: auto;
 }
 
 .project-title {
 	margin: 1rem;
 	color: black;
+	white-space: nowrap;
 }
 
 .btn-container {
@@ -424,7 +444,7 @@ article .icon {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	height: 70vh;
+	height: fit-content;
 }
 
 .contact-info-upper-container {
